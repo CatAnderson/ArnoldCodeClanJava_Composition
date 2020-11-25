@@ -16,7 +16,7 @@ public class CarTest {
     public void before(){
         engine = new Engine("1.6", "petrol");
         tyre = new Tyres("winter", 4);
-        car = new Car(9500, "Blue", engine, tyre );
+        car = new Car(9500, "Blue", tyre, engine );
     }
 
     @Test

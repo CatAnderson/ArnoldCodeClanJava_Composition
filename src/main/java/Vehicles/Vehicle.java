@@ -7,14 +7,12 @@ public abstract class Vehicle {
 
      private double price;
      private String colour;
-     private Engine engine;
      private Tyres tyres;
 
 
-    public Vehicle(double price, String colour, Engine engine, Tyres tyres) {
+    public Vehicle(double price, String colour, Tyres tyres) {
         this.price = price;
         this.colour = colour;
-        this.engine = engine;
         this.tyres = tyres;
     }
 
@@ -33,14 +31,6 @@ public abstract class Vehicle {
 
     public void setColour(String newColour) {
         this.colour = newColour;
-    }
-
-    public Engine getEngine() {
-        return engine;
-    }
-
-    public void setEngine(Engine newEngine) {
-        this.engine = newEngine;
     }
 
     public Tyres getTyres() {
