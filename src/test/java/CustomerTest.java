@@ -34,5 +34,18 @@ public class CustomerTest {
 
     }
 
+    @Test
+    public void hasCars(){
+        customer.addVehicle(hybridCar);
+        customer.addVehicle(hybridCar);
+        assertEquals(2, customer.carCount());
+    }
 
+    @Test
+    public void canRemoveVehicle() {
+        customer.addVehicle(hybridCar);
+        customer.addVehicle(hybridCar);
+        customer.removeVehicle();
+        assertEquals(1, customer.carCount());
+    }
 }

@@ -1,3 +1,4 @@
+import Vehicles.HybridCar;
 import Vehicles.Vehicle;
 
 import java.util.ArrayList;
@@ -19,5 +20,17 @@ public class Customer {
 
     public void setWallet(double newWallet) {
         this.wallet = newWallet;
+    }
+
+    public void addVehicle(Vehicle vehicle) {
+        this.cars.add(vehicle);
+    }
+
+    public void removeVehicle() {
+        this.cars.remove(0);
+    }
+
+    public int carCount() {
+        return this.cars.size();
     }
 }
