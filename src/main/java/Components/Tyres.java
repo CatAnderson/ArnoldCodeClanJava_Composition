@@ -18,4 +18,14 @@ public class Tyres {
     public void setType(String newType){
         this.type = newType;
     }
+
+    public int getNrOfTyres() {
+        return nrOfTyres;
+    }
+
+    public void setNrOfTyres(int nrOfTyres) {
+        this.nrOfTyres = nrOfTyres;
+    }
+
+
 }
