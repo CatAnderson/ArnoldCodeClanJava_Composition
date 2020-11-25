@@ -56,4 +56,9 @@ public class DealershipTest {
         assertEquals(2, dealership.carCount());
     }
 
+    @Test
+    public void hasCash(){
+        assertEquals(50000, dealership.getTill(), 0.01);
+    }
+
 }
